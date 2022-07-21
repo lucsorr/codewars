@@ -42,8 +42,7 @@
 #     b. Count how many times `integer` occurs in `output_array`:
 #       - if `times` > `n` (where n is the second argument, the max. number of possible occurences):
 #         REMOVE `integer` from `output_array`
-#       - else: 
-#         NEXT iteration
+#       - else: NEXT
 
 # 3. RETURN `output_array`
 
