@@ -51,7 +51,7 @@
 # Code: 
 
 def alphabetized(input_string)
-  chars_array = input_string.delete("^A-z").chars
+  chars_array = input_string.deleted("^A-Za-z").chars
 
   chars_array.sort! {|a, b| a.downcase <=> b.downcase }
 
@@ -66,7 +66,7 @@ end
 # it a lot more. For example, we could leverage method-chaining:
 
 def alphabetized(input_string)
-  chars_array = input_string.delete("^A-z").chars
+  chars_array = input_string.delete("^A-Za-z").chars
 
   chars_array.sort {|a, b| a.downcase <=> b.downcase }.join
 end
@@ -106,6 +106,8 @@ end
 # to the others:
 
 def alphabetized(input_string)
-  input_string.delete("^A-z").chars.sort {|a, b| a.downcase <=> b.downcase }.join
+  input_string.delete("^A-Za-z").chars.sort {|a, b| a.downcase <=> b.downcase }.join
 end
 
+
+p alphabetized("!@$%^&*()_+=-`,")
