@@ -73,7 +73,7 @@ end
 
 # This version is half the size, but less readable: on line 66 we call the `delete` method
 # on the `input_string` variable (refering to the string object we have passed as an argument
-# to the method) using a set of negative characters `"^A-z"`, which means the `delete`
+# to the `alphabetized` method) using a set of negative characters `"^A-z"`, which means the `delete`
 # method will return a version of the string object without characters that are not between the
 # 'A' and 'z' in the ASCII table, in other words, all non alphabetical characters. 
 # Note we don't use the destructive version of the method (plus '!') because we don't want to 
