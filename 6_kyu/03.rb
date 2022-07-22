@@ -108,6 +108,3 @@ end
 def alphabetized(input_string)
   input_string.delete("^A-Za-z").chars.sort {|a, b| a.downcase <=> b.downcase }.join
 end
-
-
-p alphabetized("!@$%^&*()_+=-`,")
