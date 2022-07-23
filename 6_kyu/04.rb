@@ -58,7 +58,6 @@ def string_expansion(input_string)
     if character.to_i.to_s == character
       repetitions = character.to_i
     else
-      binding.irb
       output_string << character * repetitions
     end
   end
