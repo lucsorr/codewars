@@ -25,7 +25,8 @@
 
 # >Algorithm:
 
-  # 1. INITIALIZE variable `chars_array` with an array containing ONLY alphabetical characters from `input_string`
+  # 1. INITIALIZE variable `chars_array` by assigning it to an array containing ONLY alphabetical characters 
+  #               from `input_string`
 
   # 2. REMOVE all non alphabetical characters, including whitespaces from `chars_array`
 
@@ -33,7 +34,7 @@
   #   - if they are uppercase: sort them based on its downcase countepart
   #   - if they are downcase: sort them by their place in the ASCII table ("ASCIIbetical" order)
 
-  # 4. JOIN all sorted elements in `chars_array` into a single string `sorted_string`
+  # 4. JOIN all sorted elements in `chars_array` into a single string and assigning it to a `sorted_string` variable
 
   # 5 RETURN `sorted_string`
 
@@ -51,7 +52,7 @@
 # Code: 
 
 def alphabetized(input_string)
-  chars_array = input_string.deleted("^A-Za-z").chars
+  chars_array = input_string.delete("^A-Za-z").chars
 
   chars_array.sort! {|a, b| a.downcase <=> b.downcase }
 
@@ -108,3 +109,8 @@ end
 def alphabetized(input_string)
   input_string.delete("^A-Za-z").chars.sort {|a, b| a.downcase <=> b.downcase }.join
 end
+
+
+# Stephen's feedback:
+
+explain what the method does generally and specifically in the program. 
