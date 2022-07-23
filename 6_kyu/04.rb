@@ -68,9 +68,9 @@ end
 
 # Commentary:
 
-# between lines 53 and 66 we declare the `string_expansion` method's definition using the `def` keyword, also defining
-# its method argument named `input_string`, wich will be used to reference the string object that we will pass
-# to the method when we call it later. 
+# between lines 53 and 66 we declare the `string_expansion` method's definition using the `def` keyword, also stablishing
+# as its formal parameter the variable named `input_string`, wich will be used to reference the string object that we will pass
+# to the method as its argument when we call it later. 
 
 # First, on line 55 we initialize the `repetitions` variable assigning it to the `Integer` object 1, which we will use
 # to set how many times we will copy a letter to the output string object. Note we are not assignint to 0: see the line
