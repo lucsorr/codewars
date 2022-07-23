@@ -97,7 +97,8 @@ end
 # Then we compare the result by calling the `==` comparison method over it (that returns a boolean, true if both objects have the same
 # content), and using the original string character as argument. The thing to remember is that, when we call `to_i` on a letter character,
 # it returns the integer 0, but if the character on which we call it is an integer's character, it returns its integer object equivalent.
-# When this branch is executed, we reassign variable `repetitions` to the return value from `to_i` called on `character`, its integer equivalent.
+# When this branch is executed, we reassign the variable `repetitions` to the return value from `to_i` called on `character`, its 
+# integer equivalent.
 
 # the second conditional branch `else` is executed if the character is a letter (we will only have alphanumerical characters strings as 
 # inputs): we call the `*` method on the character and provide the integer `repetitions` as argument, wich will return a new string object
