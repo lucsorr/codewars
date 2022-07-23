@@ -39,7 +39,7 @@
 
 # 1. Initialize variable `output_string` assigning it to a empty string object ""
 
-# 2. initialize variable `repetitions` assigning it to integer 0
+# 2. initialize variable `repetitions` assigning it to integer 1
 
 # 3. For every character in `input_string`:
 #     - if it is an integer character:
